@@ -1,0 +1,39 @@
+#wrapper{
+    display:grid;
+    grid-template-columns: 1fr 9fr 9fr 1fr;
+    grid-template-rows: 10rem auto;
+
+}
+
+header{
+    background-color: rgba(255, 255, 0, 0.336);
+    grid-column-start: 2;
+}
+nav{
+    line-height: 300%;
+    font-size: 1.15em;
+    grid-column: 3/4;
+    background-color: rgba(255, 0, 255, 0.336);
+    text-align: right;
+}
+
+footer{
+    grid-column-start: 2;
+    background-color: rgba(0, 255, 255, 0.336);
+}
+
+main{
+    grid-column-start: 2;
+    background-color: rgba(255, 0, 0, 0.336)
+}
+
+
+#homehero{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/homehero.jpg");
+    border:2px solid white;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
