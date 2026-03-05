@@ -1,16 +1,29 @@
+<<<<<<< HEAD
 #wrapper {
     display: grid;
+=======
+#wrapper{
+    display:grid;
+>>>>>>> 531ce56352e0b1ffcb89f15584e0ed2900bca3d8
     grid-template-columns: 1fr 9fr 9fr 1fr;
     grid-template-rows: 10rem auto;
 
 }
 
+<<<<<<< HEAD
 header {
     background-color: rgba(255, 255, 0, 0.336);
     grid-column-start: 2;
 }
 
 nav {
+=======
+header{
+    background-color: rgba(255, 255, 0, 0.336);
+    grid-column-start: 2;
+}
+nav{
+>>>>>>> 531ce56352e0b1ffcb89f15584e0ed2900bca3d8
     line-height: 300%;
     font-size: 1.15em;
     grid-column: 3/4;
@@ -18,23 +31,42 @@ nav {
     text-align: right;
 }
 
+<<<<<<< HEAD
 footer {
+=======
+footer{
+>>>>>>> 531ce56352e0b1ffcb89f15584e0ed2900bca3d8
     grid-column-start: 2;
     background-color: rgba(0, 255, 255, 0.336);
 }
 
+<<<<<<< HEAD
 main {
+=======
+main{
+>>>>>>> 531ce56352e0b1ffcb89f15584e0ed2900bca3d8
     grid-column-start: 2;
     background-color: rgba(255, 0, 0, 0.336)
 }
 
 
+<<<<<<< HEAD
 #homehero {
+=======
+#homehero{
+>>>>>>> 531ce56352e0b1ffcb89f15584e0ed2900bca3d8
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("images/homehero.jpg");
+<<<<<<< HEAD
     border: 2px solid white;
     grid-row: 2/3;
     grid-column: 3/4;
 }
+=======
+    border:2px solid white;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+>>>>>>> 531ce56352e0b1ffcb89f15584e0ed2900bca3d8
