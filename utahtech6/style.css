@@ -190,6 +190,7 @@ textarea {
     color: #666666;
     background-color: #fafafa;
     border: none;
+    
 
 }
 
@@ -202,7 +203,8 @@ textarea:focus {
 label {
     padding: 10px;
     text-align: right;
-
+    grid-column: 1;
+    
 }
 
 * {
