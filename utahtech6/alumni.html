@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Utah Tech University: Alumni</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="bluebar"></div>
+        <div id="graybar"></div>
+        <header>
+            <h1><a href="index.html">Utah Tech University</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+            </ul>
+        </nav>
+
+        <div id="alumnihero"></div>
+
+        <main>
+            <h2>Join Alumni Mailing List</h2>
+            <h3>Request Alumni Newsletter</h3>
+            <p>Required information is marked with an asterisk (*).</p>
+            <form action="https://kearl.net/se1400/mail.php" method="post">
+                <label for="fname">* First name: </label>
+                <input type="text" required="require" id="fname" name="myFName">
+
+                <label for="lname">* Last name:</label>
+                <input type="text" required="require" id="lname" name="myLName">
+
+                <label for="email">* E-mail:</label>
+                <input type="email" required="require" id="email" name="myEmail">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="myPhone">
+                
+                <label for="comments">Graduation Date:</label>
+                <input type="date" name="graduationdate">
+                
+                <label for="comments">* Comments:</label>
+                <textarea id="comments" required="require" name="myComments" rows="2" cols="20"></textarea><br><br>
+
+                <input type="submit" name="mySubmit">
+            </form>
+        </main>
+
+        <footer>
+            Copyright &copy; 2025 Utah Tech University<br>
+            <a href="27stephryat@gmail.com">ryan.stephens@utahtech.edu</a>
+        </footer>
+    </div>
+</body>
+
+</html>
