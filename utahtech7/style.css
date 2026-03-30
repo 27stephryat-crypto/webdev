@@ -176,12 +176,11 @@ nav a {
 
 form {
     display: grid;
-    grid-row: auto;
-    grid-column: 200px 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
     gap: 0.75rem;
     width: 100%;
 }
-
 
 input,
 textarea {
@@ -201,6 +200,11 @@ textarea:focus {
 label {
     padding: 10px;
     text-align: right;
+}
+
+#mySubmit {
+    width: 10rem;
+    grid-column: 2;
 }
 
 table {
