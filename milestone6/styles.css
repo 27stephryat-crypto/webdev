@@ -6,7 +6,7 @@
 
 
 header {
-    grid-column: 2/5;
+    grid-column: 2/4;
     grid-row: 1;
     font-family: Cambria;
     background-color: rgb(0, 73, 128);
@@ -25,6 +25,7 @@ nav {
     grid-column: 2/5;
     grid-row: 2;
     background-color: rgb(100, 100, 100);
+    text-align: right;
     position: sticky;
     top: 0;
 }
@@ -67,6 +68,7 @@ nav a.active {
     background-color: grey;
 }
 
+
 footer {
     font-family: Cambria;
     font-size: 15px;
@@ -74,21 +76,17 @@ footer {
     grid-row: 4;
     grid-column: 2/5;
     color: rgb(61, 60, 60);
-    background-color: rgba(0, 255, 255, 0.162)
+    background-color: rgba(0, 255, 255, 0.336);
 }
 
 
 main {
     grid-row: 3;
     grid-column: 2/4;
-    background-color: whitesmoke;
+    background-color: rgba(255, 0, 0, 0.336);
     font-family: Cambria;
 }
 
-main h2,
-h3 {
-    color: rgb(0, 73, 128);
-}
 
 .name {
     color: rgb(0, 73, 128);
@@ -110,7 +108,8 @@ h3 {
     background-image: url("images/me.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
+
 }
 
 
@@ -118,70 +117,62 @@ h3 {
     background-image: url("images/me2.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
+
 }
+
 
 
 #me3 {
-    background-image: url("images/me3.jpeg");
+    background-image: url("images/me3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
-}
+    background-position: center;
 
+}
 
 .slider {
-    position: absolute;
-    top: 8px;
-    right: 101.5px;
-    width: 110px;
-    height: 160px;
-    overflow: hidden;
     grid-column: 4;
     grid-row: 1;
-    justify-self: end;
-    align-self: center;
-    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
 }
 
-.slider figure {
-    display: flex;
-    animation: slide 5s infinite;
-    position: relative;
-    width: 300%;
-    height: 100%;
-    margin: 0;
-}
+#slider1,
+#slider2,
+#slider3 {
+    grid-column: 3;
+    grid-row: 1;
+    height: 150px;
 
-.slider img {
-    width: 33.333%;
-    height: 100%;
-    object-fit: cover;
-    float: left;
 }
 
 @keyframes slide {
-
-    0%,
-    20% {
-        left: 0;
+    0% {
+        transform: translateX(0%);
     }
 
-    33%,
-    58% {
-        left: -100%;
+    30% {
+        transform: translateX(0%);
     }
 
-    66%,
-    91% {
-        left: -200%;
+    35% {
+        transform: translateX(-100%);
+    }
+
+    65% {
+        transform: translateX(-100%);
+    }
+
+    70% {
+        transform: translateX(-200%);
     }
 
     100% {
-        left: 0;
+        transform: translateX(-200%);
     }
 }
-
 
 
 
@@ -201,6 +192,7 @@ h3 {
         right: 100px;
     }
 
+
     header {
         grid-column: 1/6;
     }
@@ -208,6 +200,7 @@ h3 {
     main {
         grid-column: 1/6;
     }
+
 
     nav {
         grid-column: 1/4;
@@ -231,6 +224,9 @@ h3 {
         grid-row: 4;
         grid-column: 1/6;
     }
+
+
+
 
 
     #river {
