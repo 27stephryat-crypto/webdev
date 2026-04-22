@@ -58,6 +58,8 @@ nav a {
     padding: 1rem 0rem;
     display: block;
     text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s;
 }
 
 nav a:hover {
@@ -188,11 +190,6 @@ main img {
 #mySubmit {
     width: 10rem;
     grid-column: 2/3;
-}
-
-nav a {
-    text-decoration: none;
-    transition: background-color 0.5s;
 }
 
 form {
