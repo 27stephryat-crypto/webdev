@@ -103,7 +103,26 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("images/river.jpeg");
+    background-image: url("images/river.jpg");
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+#lacrosse {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/lacrosse.jpeg");
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+
+#YC {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/YC.jpeg");
     grid-row: 3/4;
     grid-column: 4/5;
 }
