@@ -220,10 +220,6 @@ label {
     text-align: right;
 }
 
-#mySubmit {
-    width: 10rem;
-    grid-column: 2;
-}
 
 table {
     margin: 0 auto;
