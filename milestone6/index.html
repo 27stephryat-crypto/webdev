@@ -7,10 +7,7 @@
     <title>R.J.'s Resume</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="sss/sss.min.js"></script>
-    <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
-    <script>jQuery(function ($) { $('.slider').sss(); });</script>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 
 
@@ -25,15 +22,20 @@
 
 
         <div id="river"></div>
-        <div class="slider">
-            <img id="slider1" src="images/me.jpeg">
-            <img id="slider2" src="images/me2.jpeg">
-            <img id="slider3" src="images/me3.jpeg">
 
+
+        <div class="slider">
+            <figure>
+                <img id="slider1" src="images/me.jpeg" alt="R.J. Stephens in suit">
+                <img id="slider2" src="images/me2.jpeg" alt="R.J. Stephens in black lacrosse sweats">
+                <img id="slider3" src="images/me3.jpeg" alt="R.J. Stephens in blue lacrosse uniform">
+            </figure>
         </div>
+
+
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
 
 
                 <li><a href="competition.html">Competition</a></li>
@@ -104,56 +106,18 @@
                 <h3>Contact</h3>
                 <p>
                     R.J. Stephens<br>
-                    3128 Swiss Dr.<br>
                     Santa Clara, UT 84765<br><br>
                     (435) 272-5095
                 </p>
             </div>
         </main>
 
+
         <footer>
-            <p>Copyright &copy;2026</p>
+            <p>Copyright &copy;2026 &bull; Last updated April 2026</p>
             <p>27stephryat@gmail.com</p>
         </footer>
     </div>
-
-
-
-    <script>
-        const imageSlider = [document.getElementById("slider1"), document.getElementById("slider2"), document.getElementById("slider3")];
-        index = 0;
-        fading = true;
-        document.addEventListener('DOMContentLoaded', (event) => {
-            for (i = 0; i < 3; i++) {
-                imageSlider[i].style.display = "none";
-            }
-            imageSlider[0].style.display = "block";
-            imageSlider[0].style.opacity = 1;
-        });
-
-
-        function fade() {
-            if (fading) {
-                imageSlider[index].style.border = "1px solid black";
-                imageSlider[index].style.opacity -= .05;
-                if (imageSlider[index].style.opacity == 0) {
-                    fading = false;
-                    index += 1;
-                    if (index >= 3) {
-                        index = 0;
-                    }
-                    imageSlider[index].style.opacity = 0;
-                    imageSlider[index].style.display = "block";
-                }
-            } else {
-                imageSlider[index].style.opacity += .5;
-                fading = false;
-
-            }
-        }
-        setInterval(fade, 100);
-    </script>
-
 
 
 </body>
