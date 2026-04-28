@@ -44,6 +44,17 @@ nav ul li {
     text-decoration: none;
 }
 
+nav a {
+    color: #FFFFFF;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: blue;
+}
 
 
 #image\background-1 {
@@ -56,7 +67,6 @@ nav ul li {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 main {
     grid-column: 1/2;
@@ -77,6 +87,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
 }
 
+#shoppingcart div {
+    margin: 0.5em;
+}
+
 table {
     margin: 0 auto;
     border: 1px solid #424242;
@@ -93,7 +107,7 @@ video {
     margin-left: 2em;
 }
 
-input:focus,
-textarea:focus {
-    outline: none;
+#shoppingcart img {
+    height: auto;
+    width: 100%;
 }
